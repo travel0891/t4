@@ -37,7 +37,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entity\area.cs" />
+    <Compile Include="entity\city.cs" />
+    <Compile Include="entity\company.cs" />
+    <Compile Include="entity\district.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="table\area.cs" />
+    <Compile Include="table\city.cs" />
+    <Compile Include="table\company.cs" />
+    <Compile Include="table\district.cs" />
     <Compile Include="utils\baseTable.cs" />
     <Compile Include="utils\helper.cs" />
     <Compile Include="utils\query.cs" />
