@@ -28,8 +28,8 @@ namespace view.test
 
             html.Append("</ul>");
 
-            Response.Write(html.ToString());
-            Response.End();
+           // Response.Write(html.ToString());
+           // Response.End();
         }
     }
 }

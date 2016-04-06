@@ -5,3 +5,11 @@
 .right {
   float: right;
 }
+
+.left {
+  float: left;
+}
+
+.tal{text-align: left}
+
+.lh20{ line-height:20px;}
