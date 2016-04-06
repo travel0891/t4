@@ -44,7 +44,22 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="main.aspx" />
+    <Content Include="lib\bootstrap\3.3.5\css\bootstrap-theme.css" />
+    <Content Include="lib\bootstrap\3.3.5\css\bootstrap-theme.min.css" />
+    <Content Include="lib\bootstrap\3.3.5\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\3.3.5\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\3.3.5\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\3.3.5\js\bootstrap.min.js" />
+    <Content Include="lib\bootstrap\3.3.5\js\npm.js" />
+    <Content Include="lib\jquery\2.2.3\jquery.min.js" />
+    <Content Include="lib\require\2.1.11\require.js" />
+    <Content Include="module\login.aspx" />
+    <Content Include="module\system\search_area.aspx" />
+    <Content Include="static\css\extend.css" />
+    <Content Include="static\css\login.css" />
+    <Content Include="static\js\async_modal.js" />
+    <Content Include="test\city.aspx" />
     <Content Include="static\main.js" />
     <Content Include="static\require.js" />
     <Content Include="Web.config" />
@@ -56,14 +71,29 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="module\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="module\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="module\system\search_area.aspx.cs">
+      <DependentUpon>search_area.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="module\system\search_area.aspx.designer.cs">
+      <DependentUpon>search_area.aspx</DependentUpon>
+    </Compile>
     <Compile Include="viewBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="main.aspx.cs">
-      <DependentUpon>main.aspx</DependentUpon>
+    <Compile Include="test\city.aspx.cs">
+      <DependentUpon>city.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="main.aspx.designer.cs">
-      <DependentUpon>main.aspx</DependentUpon>
+    <Compile Include="test\city.aspx.designer.cs">
+      <DependentUpon>city.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,10 +109,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
-    <Folder Include="static\css\" />
     <Folder Include="static\img\" />
-    <Folder Include="static\js\" />
-    <Folder Include="test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\bootstrap\3.3.5\css\bootstrap-theme.css.map" />
+    <None Include="lib\bootstrap\3.3.5\css\bootstrap.css.map" />
+    <None Include="lib\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="lib\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="lib\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="lib\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

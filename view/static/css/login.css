@@ -1,0 +1,38 @@
+﻿body {
+    background-color: #f6f6f6;
+}
+
+.login_wrap {
+    width: 96%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 6% auto;
+}
+
+.login_wrap .header {
+    margin-bottom: 30px;
+    height: 54px;
+    line-height: 54px;
+}
+
+.login_wrap .header p {
+    font-size: 22px;
+    color: #333;
+}
+
+.login_wrap .login_form {
+    border: 1px solid #ececec;
+    padding: 40px 40px 25px 40px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 3px #eee, 0 0 3px #fff inset;
+}
+
+.login_wrap .login_form .tool {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.login_wrap .footer {
+    margin-top: 40px;
+}

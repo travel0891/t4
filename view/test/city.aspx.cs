@@ -6,18 +6,18 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
 
-namespace view
+namespace view.test
 {
     using model.table;
     using controller;
 
-    public partial class main1 : viewBase
+    public partial class city : viewBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             StringBuilder html = new StringBuilder();
 
-            List<district> listDistrict = controllerProvider.instance().selectDistrict();
+            List<district> listDistrict = controllerProvider.instance().searchDistrict();
 
             html.Append("<ul>");
 
