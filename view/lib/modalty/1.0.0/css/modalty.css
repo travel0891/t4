@@ -1,0 +1,59 @@
+﻿
+.modalty_mask {
+    background-color: #000;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.modalty_main {
+    height: auto;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 0 0 8px #ccc;
+    border-radius: 4px;
+    top:200px;
+}
+
+.modalty_title {
+    border-radius: 4px 4px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    padding: 0 12px;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+}
+
+.modalty_close {
+    line-height: 40px;
+    font-size: 32px;
+}
+
+.modalty_button_group {
+    border: 1px solid #aaa;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    height: 46px;
+    background-color: #f6f6f6;
+    padding: 8px 12px;
+}
+
+.modalty_sava {
+    float: right;
+}
+
+.modalty_form {
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    height: auto;
+    padding: 20px;
+}

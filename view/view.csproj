@@ -52,7 +52,10 @@
     <Content Include="lib\bootstrap\3.3.5\js\bootstrap.js" />
     <Content Include="lib\bootstrap\3.3.5\js\bootstrap.min.js" />
     <Content Include="lib\bootstrap\3.3.5\js\npm.js" />
+    <Content Include="lib\jquery-ui\1.11.4\jquery-ui.min.js" />
     <Content Include="lib\jquery\2.2.3\jquery.min.js" />
+    <Content Include="lib\modalty\1.0.0\css\modalty.css" />
+    <Content Include="lib\modalty\1.0.0\js\modalty.js" />
     <Content Include="lib\require\2.1.11\require.js" />
     <Content Include="module\login.aspx" />
     <Content Include="module\system\search_area.aspx" />
@@ -71,6 +74,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="action\system\search_area.ashx.cs">
+      <DependentUpon>search_area.ashx</DependentUpon>
+    </Compile>
     <Compile Include="module\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -112,6 +118,7 @@
     <Folder Include="static\img\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="action\system\search_area.ashx" />
     <None Include="lib\bootstrap\3.3.5\css\bootstrap-theme.css.map" />
     <None Include="lib\bootstrap\3.3.5\css\bootstrap.css.map" />
     <None Include="lib\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.eot" />
