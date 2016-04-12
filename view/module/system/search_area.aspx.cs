@@ -16,9 +16,9 @@ namespace view.module.system
         protected void Page_Load(object sender, EventArgs e)
         {
             StringBuilder html = new StringBuilder();
-
-            html.AppendFormat("<a class=\"tal btn btn-primary\">{0}上海市</a>"
-                , "<span id=\"districtSettings\" class=\"right lh20 glyphicon glyphicon-cog\"></span>");
+            html.Append("<a class=\"tal btn btn-primary\">");
+            html.AppendFormat("<span id=\"districtSettings\" data-charid=\"{0}\" class=\"right lh20 glyphicon glyphicon-cog\"></span>", "F1DAADB8-FA99-49C5-854F-CE10CB44545B");
+            html.Append("上海市</a>");
 
             List<district> listDistrict = controllerProvider.instance().searchDistrict();
             foreach (district districtItem in listDistrict)

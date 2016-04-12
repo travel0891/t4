@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="area.cs" />
+    <Compile Include="city.cs" />
     <Compile Include="district.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

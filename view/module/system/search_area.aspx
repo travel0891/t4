@@ -62,7 +62,7 @@
         });
 
         $("#districtSettings").on("click", function () {
-            modalty.modal("400", "常用区域设置", true, "searchAreaByDistrictCharId", "system/search_area");
+            modalty.modal("400", "常用区域设置", true, "searchDistrictByCityCharId", "system/search_area", "cityCharId=" + $(this).data("charid"));
         });
 
     </script>

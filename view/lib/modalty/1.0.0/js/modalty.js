@@ -13,12 +13,12 @@ modalty.maskId = "mask" + modalty.tempId
 , modalty.cancelId = "cancel" + modalty.tempId
 , modalty.asyncId = "async" + modalty.tempId + "From";
 
-modalty.modal = function (mWidth, mTitle, mClose, mEvent, mAsyncUrl) {
+modalty.modal = function (mWidth, mTitle, mClose, mEvent, mAsyncUrl, mParameter) {
     var html = "<div id=\"" + modalty.maskId + "\" class=\"modalty_mask\"></div>";
     html += "<div id=\"" + modalty.modalId + "\" class=\"modalty_main\" style=\"width:" + mWidth + "px;left:" + ($(window).width() - mWidth) / 2 + "px\">";
     html += "<div id=\"" + modalty.draggableId + "\" class=\"modalty_title\">";
     html += "<span>" + mTitle + "</span>";
-    mClose ? (html += "<a id=\"" + modalty.closeId + "\" class=\"close modalty_close\" title=\"\u5173\u95ed\" href=\"javascript:modalty.close();\">&times;</a>") : "";
+    // mClose ? (html += "<a id=\"" + modalty.closeId + "\" class=\"close modalty_close\" title=\"\u5173\u95ed\" href=\"javascript:modalty.close();\">&times;</a>") : "";
     html += "</div>";
     html += "<form id=\"" + mEvent + "From\">";
     html += "<div id=\"" + modalty.asyncId + "\" class=\"modalty_form\">";
@@ -29,10 +29,10 @@ modalty.modal = function (mWidth, mTitle, mClose, mEvent, mAsyncUrl) {
     html += "</div>";
     html += "</form>";
     $("body").prepend(html);
-    modalty.load(mEvent, mAsyncUrl);
-}, modalty.load = function (mEvent, mAsyncUrl) {
+    modalty.load(mEvent, mAsyncUrl, mParameter);
+}, modalty.load = function (mEvent, mAsyncUrl, mParameter) {
     modalty.request = $.ajax({
-        url: "/action/" + mAsyncUrl + ".ashx?action=" + mEvent + "&districtCharId=e6c2853e-5d5c-46a6-988b-85853483f676",
+        url: "/action/" + mAsyncUrl + ".ashx?action=" + mEvent + "&" + mParameter,
         cache: true,
         timeout: modalty.asyncTime,
         dataType: "html",
